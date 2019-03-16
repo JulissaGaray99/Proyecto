@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Registrar Institución</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/perfil_institucion.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=".html">Inicio</a>
+        </nav>
+    </header>
+    <nav>
+        <img src="imgs/banner.jpg" id="submenu">
+    </nav>
+
+
+    <section id="seccion_formulario">
+
+        <h1>Registrar Institución</h1>
+
+        <form id="frm_formulario">
+            <!--Nombre-->
+            <div id="div_nombre">
+                <label for="txt_nombre">Nombre</label>
+                <input type="text" name="nombre" id="txt_nombre" value="" />
+
+                <label for="txt_nombre_comercial">Nombre Comercial</label>
+                <input type="text" name="nombre_comercial" id="txt_nombre_comercial" value="" />
+            </div>
+            <!--cédula jurídica -->
+            <div id="div_cedula">
+                <label for="txt_cedula">Cédula Jurídica</label>
+                <input type="text" name="cedula" id="txt_cedula" value="" />
+
+                <label for="txt_anio_fundacion">Año de fundacion</label>
+                <input type="date" name="anio_fundacion" value="" id="txt_anio_funda" />
+            </div>
+
+            <!--Tipo-->
+            <div id="div_general">
+                <label>Tipo</label>
+                <select id="select_tipo">
+                    <option value="Publico">Publico</option>
+                    <option value="Privado">Privado</option>
+                </select>
+                <label>Grado</label>
+                <select id="select_grado">
+                    <option value="Primaria">Primaria</option>
+                    <option value="Secundaria">Secundaria</option>
+                </select>
+                <label>Generos</label>
+                <select id="select_genero">
+                    <option value="Mixto">Mixto</option>
+                    <option value="Mujeres">Mujeres</option>
+                    <option value="Hombre">Hombre</option>
+                </select>
+                <label for="txt_select">Especialidad</label>
+                <select id="select_especialidad">
+                    <option value="academico">Académico</option>
+                    <option value="cientifico">científico</option>
+                    <option value="bachillerato_madurez">bachillerato por madurez</option>
+                    <option value="pedagogico">pedagógico</option>
+                </select>
+            </div>
+
+            <!--Referencia historica-->
+            <div id="div_ref_historica">
+
+                <!--Contacto-->
+                <div id="div_contacto">
+                    <fieldset class="f_general">
+                        <legend>Contacto</legend>
+                        <div>
+                            <label>Numero de Telefono</label>
+                            <input type="text" name="txt_telefono" value="" id="txt_num_telefono" />
+                        </div>
+
+                        <div>
+                            <label>Numero de Fax</label>
+                            <input type="text" name="txt_fax" value="" id="txt_fax" />
+                        </div>
+                        <div>
+                            <label>Web</label>
+                            <input type="text" name="txt_web" value="" id="txt_web" />
+                        </div>
+                        <div>
+                            <label>Facebook</label>
+                            <input type="text" name="txt_facebook" value="" id="txt_facebook" />
+                        </div>
+                        <div>
+                            <label>Twitter</label>
+                            <input type="text" name="txt_twitter" value="" id="txt_twitter" />
+                        </div>
+                        <div>
+                            <label>Instagram</label>
+                            <input type="text" name="txt_instagram" value="" id="txt_instagram" />
+
+                        </div>
+
+                    </fieldset>
+
+                </div>
+                <!--Direccion :)-->
+                <div id="div_direccion">
+                    <fieldset class="f_general">
+                        <legend>Dirección</legend>
+                        <div>
+                            <label>Direccion</label>
+                            <input type="text" name="txt_direccion" value="" id="txt_direccion" />
+                        </div>
+                        <div>
+                            <label>Provincia</label>
+                            <input type="text" name="txt_provincia" value="" id="txt_provincia" />
+                        </div>
+                        <div>
+                            <label>Canton</label>
+                            <input type="text" name="txt_canton" value="" id="txt_canton" />
+                        </div>
+                        <div>
+                            <label>Distrito</label>
+                            <input type="text" name="txt_distrito" value="" id="txt_distrito" />
+                        </div>
+                    </fieldset>
+                </div>
+                <!--div_ref-->
+                <div id="div_historica">
+                    <div>
+                        <label for="txt_referencia_historica">Referencia historica</label>
+                    </div>
+
+                    <div>
+                        <textarea id="txt_referen_historica"></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="div_docuemento">
+                <label>Docuementos</label>
+                <input type="url" name="txt_documentos" value="" id="txt_documentos" />
+            </div>
+
+
+
+            <div id="div_btn">
+
+                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe" data-callback="verifyCaptcha"></div>
+                <div id="g-recaptcha-error"></div>
+                <button type="button" id="btn_enviar">Enviar</button>
+
+            </div>
+
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>© Copyright 2018. Alfred. Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/servicio_registro.js"></script>
+    <script src="js/controlador_registro.js"></script>
+    <script src="js/verificador.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+        function submitUserForm() {
+            var response = grecaptcha.getResponse();
+            if (response.length == 0) {
+                document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+                return false;
+            }
+            return true;
+        }
+
+        function verifyCaptcha() {
+            document.getElementById('g-recaptcha-error').innerHTML = '';
+        }
+    </script>
+
+</body>
+</html>
+

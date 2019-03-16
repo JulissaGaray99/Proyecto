@@ -1,0 +1,51 @@
+#frm_registrar{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 30%;
+
+}
+#backbtn{
+  display: inline-block;
+  font-family: 'Roboto Slab', serif;
+  color:white;
+  text-decoration: none;
+  margin-left: 5%;
+  margin-top: 1%;
+
+
+}
+#backbtn:hover{
+  color: #c0392b;
+}
+#frm_registrar div{
+    margin-bottom: 10px;
+}
+#frm_registrar label{
+    display: inline-block;
+    width: 110px;
+    font-family: 'Roboto Slab', serif;
+}
+#frm_registrar input{
+    display: inline-block;
+    width: 250px;
+    height: 30px;
+    outline: none;
+}
+#frm_registrar button{
+    display: inline-block;
+    font-family: 'Roboto Slab', serif;
+    background:  #B82601;
+    color: white;
+    padding: 10px;
+    width: 140px;
+    margin-top: 3%;
+    font-size: 16px;
+    margin-left: 20%;
+    margin-bottom: 100px;
+    border:none;
+
+}
+#frm_registrar button:hover{
+
+    background:  #062F4F;
+}

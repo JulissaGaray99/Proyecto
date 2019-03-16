@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alfred</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/registro_utiles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href=".html">Inicio</a>
+        <a href=".html">Instituciones</a>
+        <a href=".html">Rankings</a>
+        <img src="imgs/img_settings.png" class="header_derecha" href=".html">
+        <img src="imgs/img_perfil.png" class="header_derecha" href=".html">
+        <a href=".html" class="header_derecha">Panel de Control</a>
+      </nav>
+      <div id="banner" style="background-image: url('imgs/foto4.jpg');background-repeat: no-repeat;background-size: cover; background-color: rgba(0, 0, 0, 0.8);">
+        <h1>Alfred</h1>
+      </div>
+    </header>
+    <main>
+      <h1>Registro de Útiles Escolares</h1>
+      <form>
+        <div class="registro_util">
+          <label for="txt_util">Útil Escolar:</label>
+          <input type="text" name="txt_util" id="txt_util" value="" placeholder="Ej. Cuaderno">
+        </div>
+        <div class="registro_util">
+          <label for="txt_descripcion">Descripción:</label>
+          <textarea name="txt_descripcion" id="txt_descripcion" placeholder="Ej. Cuadernos Norma de cien hojas"></textarea>
+        </div>
+        <div class="registro_util_diferente">
+          <label for="numero_util" id="lbl_cantidad">Cantidad:</label>
+          <input type="number" name="numero_util" id="numero_util" value="" placeholder="Ej. 4">
+        </div>
+        <div class="registro_util">
+          <fieldset>
+            <label for="select_nivel">Nivel:</label>
+            <select class="select_nivel" id="select_nivel" name="select_nivel">
+              <option value="0">Escoja un nivel</option>
+              <option value="1">Primero</option>
+              <option value="2">Segundo</option>
+              <option value="3">Tercero</option>
+              <option value="4">Cuarto</option>
+              <option value="5">Quinto</option>
+              <option value="6">Sexto</option>
+              <option value="7">Setimo</option>
+              <option value="8">Octavo</option>
+              <option value="9">Noveno</option>
+              <option value="10">Decimo</option>
+              <option value="11">Undecimo</option>
+              <option value="12">Duodecimo</option>
+            </select>
+          </fieldset>
+        </div>
+        <button type="button" id="btn_registrar_util" name="btn_registrar_util">Registrar</button>
+      </form>
+    </main>
+    <footer>
+      <p>© Copyright 2018. Alfred. Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/servicio_util_institucion.js"></script>
+    <script src="js/controlador_util_institucion.js"></script>
+  </body>
+</html>

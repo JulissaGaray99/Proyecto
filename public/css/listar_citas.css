@@ -1,0 +1,100 @@
+#menu_institucion{
+    background: #062F4F;
+    text-align: center;
+  }
+  
+  #menu_institucion nav{
+    padding-top: 10px;
+    height: 40px;
+  }
+  
+  #menu_institucion a{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #FFFFFF;
+  }
+  
+  #menu_institucion a:hover{
+    color: #B82601;
+  }
+  
+  #banner_institucion{
+    width: 100%;
+    height: auto;
+  }
+  
+  #submenu{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  #submenu img{
+    width: 50px;
+    height: auto;
+    float: right;
+    padding-right: 100px;
+  }
+  
+  #submenu #titulo{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+  }
+  #tbl_citas{
+        
+    margin-left:5%;
+    font-family: 'Roboto Slab', serif;  
+    size: 18px;
+    margin-top: 5%;
+   margin-right: 5%;
+
+    
+}
+
+
+#tbl_citas div{
+   
+    background-size: cover;
+   float: center;
+    padding: 15px;
+}
+
+#tbl_citas tr th{
+    border: 1px solid black;
+    height: 40px;
+    color:#5f27cd;
+    font-family: 'Roboto Slab', serif;
+    font-size:18px;
+  
+  
+}
+#tbl_citas tr td{
+  padding: 10px;
+  text-align: center;
+  border: 1px solid;
+  
+}
+
+
+#tbl_citas tbody tr:hover{
+  background: #82ccdd;
+  
+}
+#tbl_citas thead tr:hover{
+  background:#dcdde1;
+  border: none;
+}
+#tbl_citas th, td{
+  padding: 15px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 15px;
+}
+#tbl_citas tbody{
+
+height: 5px;
+width: 10px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <meta charset="UTF-8">
+      <title>Registrar padres </title>
+      <link rel="stylesheet" href="css/reset.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+      <link rel="stylesheet" href="css/general.css">
+
+   </head>
+
+<body>
+ <header>
+   <nav>
+      <a href=".html">Inicio</a>
+      <a href=".html">Instituciones</a>
+      <a href=".html">Rankings</a>
+      <img src="imgs/img_settings.png" class="header_derecha" href=".html">
+      <img src="imgs/img_perfil.png" class="header_derecha" href=".html">
+      <a href=".html" class="header_derecha">Panel de Control</a>
+    </nav>
+    <div id="banner" style="background-image: url('imgs/foto4.jpg');background-repeat: no-repeat;background-size: cover; background-color: rgba(0, 0, 0, 0.8);">
+      <h1>Alfred</h1>
+    </div>
+ </header>
+<main>
+   <div class="central">
+      <hi>Registro de Padre</hi>
+   </div>
+
+   <form  class="centro" id="frm_contacto">
+      <div>
+         <label for="txt_nombre">Nombre</label>
+         <input type="text" id="txt_nombre">
+      </div>
+      <div>
+         <label for="txt_primer_apellido">Primer apellido</label>
+         <input type="text" id="txt_primer_apellido">
+      </div>
+      <div>
+         <label for="txt_segundo_apellido">Segundo apellido</label>
+         <input type="text" id="txt_segundo_apellido">
+      </div>
+      <div>
+         <label for="txT_Identificacion">Identificacion</label>
+         <input type="number" id="txt_identificacion">
+      </div>
+      <di>
+         <label for="txt_Nacionalidad">Nacionalidad</label>
+         <input type="text" id="txt_nacionalidad">
+      </di>
+      <div>
+         <label for="txt_distrtito">Distrito</label>
+         <input type="text" id="txt_distrito">
+      </div>
+      <div>
+         <label for="txt_canton">Canton</label>
+         <input type="text" id="txt_canton">
+      </div>
+      <div>
+          <label for="txt_provencia">Provincia</label>
+          <input type="text" id="txt_provincia">
+      </div>
+      <div>
+            <label for="txT_cantidad_de hijos">Cantidad de hijos</label>
+            <input type="number" id="txt_cantidad_de_hijos">
+         </div>
+        <div>
+            <label for="txt_correo">Correo</label>
+            <input type="email" id="txt_correo">
+        </div>
+        <div class="boton">
+            <button type="button" id="btn_registrar">Registrar</button>
+        </div>
+   </form>
+</main>
+<footer>
+   <p>© Copyright 2018. Alfred. Todos los derechos reservados</p>
+ </footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="js/controlador_registrar_padres.js"></script>
+<script src="js/servicio_padres.js"></script>
+</body>
+</html>
