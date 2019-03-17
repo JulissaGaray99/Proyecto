@@ -1,8 +1,8 @@
 'use strict';
-const modelo_util_institucino = require('./utiles_institucion.model');
+const modelo_util_mep = require('./utiles_mep.model');
 
 module.exports.registrar = (req, res) =>{
-  let nuevo_util_institucion = new modelo_util_institucino(
+  let nuevo_util_mep = new modelo_util_mep(
     {
       util : req.body.util,
       descripcion : req.body.descripcion,
@@ -10,7 +10,7 @@ module.exports.registrar = (req, res) =>{
       nivel : req.body.nivel
     }
   );
-  nuevo_util_institucion.save(function(error){
+  nuevo_util_mep.save(function(error){
     if (error) {
       res.json(
         {
@@ -30,7 +30,7 @@ module.exports.registrar = (req, res) =>{
 };
 
 module.exports.listar_todos = (req, res) =>{
-  modelo_util_institucino.find().then(
+  modelo_util_mep.find().then(
     function(utiles){
       if(utiles.length > 0){
         res.json(
