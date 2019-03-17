@@ -29,7 +29,7 @@ module.exports.registrar_utiles_mep = (req, res) =>{
   });
 };
 
-module.exports.listar_utiles_mep = (req, res) =>{
+module.exports.listar_todos = (req, res) =>{
   modelo_util_mep.find().then(
     function(utiles){
       if (utiles.length > 0) {

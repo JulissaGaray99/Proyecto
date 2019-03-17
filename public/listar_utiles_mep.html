@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Alfred</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/listar_utiles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href=".html">Inicio</a>
+        <a href=".html">Instituciones</a>
+        <a href=".html">Rankings</a>
+        <img src="imgs/img_settings.png" class="header_derecha" href=".html">
+        <img src="imgs/img_perfil.png" class="header_derecha" href=".html">
+        <a href=".html" class="header_derecha">Panel de Control</a>
+      </nav>
+      <div id="banner" style="background-image: url('imgs/foto4.jpg');background-repeat: no-repeat;background-size: cover; background-color: rgba(0, 0, 0, 0.8);">
+        <h1>Alfred</h1>
+      </div>
+    </header>
+    <main>
+      <h1>Tabla de Utiles</h1>
+      <form class="formulario_busqueda_util" action="" method="post">
+        <div class="buscar_util">
+          <input type="search" name="buscar_util" id="buscar_util" placeholder="Ej. Cuaderno" value="">
+          <button type="button" name="button">Buscar</button>
+        </div>
+      </form>
+      <table id="tbl_utiles">
+        <thead>
+          <tr>
+            <th>
+              Nombre:
+              <fieldset>
+                <select class="" name="">
+                  <option value="a_z">Ordenar A-Z</option>
+                  <option value="z_a">Ordenar Z-A</option>
+                </select>
+              </fieldset>
+            </th>
+            <th>Descripción:</th>
+            <th>Cantidad:</th>
+            <th>
+              Nivel:
+              <fieldset>
+                <select class="" id="filtrar_util" name="">
+                  <option value="0">Escoja un nivel</option>
+                  <option value="1">Primero</option>
+                  <option value="2">Segundo</option>
+                  <option value="3">Tercero</option>
+                  <option value="4">Cuarto</option>
+                  <option value="5">Quinto</option>
+                  <option value="6">Sexto</option>
+                  <option value="7">Setimo</option>
+                  <option value="8">Octavo</option>
+                  <option value="9">Noveno</option>
+                  <option value="10">Decimo</option>
+                  <option value="11">Undecimo</option>
+                  <option value="12">Duodecimo</option>
+                </select>
+              </fieldset>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <button type="button" id="btn_registrar_nuevo" onclick=" location.href='registrar_utiles_institucion.html' " name="button">Registrar Nuevo Útil</button>
+    </main>
+    <footer>
+      <footer>
+        <p>© Copyright 2018. Alfred. Todos los derechos reservados</p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+      <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="js/servicio_util_mep.js"></script>
+      <script src="js/controlador_listar_mep.js"></script>
+    </footer>
+  </body>
+</html>

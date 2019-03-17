@@ -14,7 +14,7 @@ router.route('/registrar_util_mep')
   router.route('/listar_utiles_mep')
   .get(
     function(req, res){
-      api_utiles_mep.listar_utiles_mep(req,res)
+      api_utiles_mep.listar_todos(req,res)
     }
   );
 
