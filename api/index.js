@@ -73,6 +73,8 @@ const cita = require('./componentes/cita/cita.route');
 const pcomercial = require('./componentes/pagina_comercial/pcomercial.route');
 const idioma = require('./componentes/idioma/idioma.route');
 const institucion = require('./componentes/instituciones/instituciones.route');
+const utiles_mep = require('./componentes/utiles_mep/utiles_mep.route')
+app.use('/api', utiles_mep);
 app.use('/api', institucion);
 app.use('/api',idioma);
 app.use('/api', pcomercial);
